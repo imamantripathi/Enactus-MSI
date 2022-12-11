@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0%;
+  margin: 0%;
+}
+/* CSS implementation in H1  */
+header > h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header > h1::before,
+header > h1::after {
+  content: url(/Images/favicon-32x32.png);
+}
+/* CSS implementation in Navbar  */
+nav {
+  background: #ffc222;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0px 2px 3px #515356;
+}
+nav > ul {
+  font-style: italic;
+  color: #515356;
+  font-size: 130%;
+  list-style-type: none;
+  text-align: center;
+}
+nav > ul > li {
+  display: inline;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+nav > ul > li:hover {
+  color: black;
+  /* font-style: italic; */
+  text-shadow: 1px 1px 1px black;
+}
