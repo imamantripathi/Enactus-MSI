@@ -14,15 +14,16 @@ header > h1 {
 }
 header > h1::before,
 header > h1::after {
-  content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdDCbJsaLkCmln0knobVOh4Z84ELcHodBxOyozWb0bw&s");
+  content: url("https://github.com/imamantripathi/Enactus-MSI/blob/master/Images/favicon-32x32-removebg-preview.png?raw=true");
 }
 
 /* CSS implementation in Navbar  */
 nav {
   background: #ffc222;
   padding-top: 1em;
+  position: sticky;
   padding-bottom: 1em;
-  box-shadow: 0px 2px 3px #ffffff;
+  box-shadow: 0px 2px 3px #ffc222;
 }
 nav > ul {
   /* font-style: italic; */
@@ -50,6 +51,7 @@ nav > ul > li:hover {
 .donation_marquee {
   background: #000;
   color: #ffc222;
+  padding-top: 5px;
 }
 .donation_marquee > button {
   color: black;
@@ -106,3 +108,6 @@ img {
 .scrollFade--animate {
   transition: opacity 0.4s ease-in-out;
 }
+
+
+
