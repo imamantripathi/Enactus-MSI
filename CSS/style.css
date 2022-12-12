@@ -14,7 +14,7 @@ header > h1 {
 }
 header > h1::before,
 header > h1::after {
-  content: url(/Images/favicon-32x32-removebg-preview.png);
+  content: url("/Images/favicon-32x32-removebg-preview.png");
 }
 
 /* CSS implementation in Navbar  */
