@@ -12,8 +12,9 @@ header > h1 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-header > h1::before,
-header > h1::after {
+ h1::before,
+h1::after {
+  display: inline;
   content: url("/Images/favicon-32x32-removebg-preview.png");
 }
 
