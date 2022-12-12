@@ -12,10 +12,9 @@ header > h1 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
- h1::before,
-h1::after {
-  display: inline;
-  content: url("/Images/favicon-32x32-removebg-preview.png");
+header > h1::before,
+header > h1::after {
+  content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdDCbJsaLkCmln0knobVOh4Z84ELcHodBxOyozWb0bw&s");
 }
 
 /* CSS implementation in Navbar  */
