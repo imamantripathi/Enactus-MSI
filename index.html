@@ -25,10 +25,21 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/about_section.css" />
     <link rel="stylesheet" href="CSS/projects.css" />
+    <link rel="stylesheet" href="CSS/core_team.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
     <title>Enactus MSI</title>
     <style></style>
   </head>
@@ -46,7 +57,12 @@
         <li><a href="#">Shop Now!</a></li>
       </ul>
     </nav>
-    <marquee class="donation_marquee" behavior="scroll" direction="right"
+    <marquee
+      class="donation_marquee"
+      onMouseOver="this.stop()"
+      onMouseOut="this.start()"
+      behavior="scroll"
+      direction="right"
       >Help us create better lives for people around the world.
       <a href="#"><button>Donate Now !</button></a></marquee
     >
@@ -125,7 +141,7 @@
         </div>
       </div>
     </section>
-    <section class="about scrollFade" id="about">
+    <section class="about scrollFade" style="background: #F0E68C;" id="about">
       <div class="content">
         <div class="text">
           <h5
@@ -177,16 +193,158 @@
         </div>
       </div>
     </section>
-   
+
     <section class="project-main-container scrollFade">
-      <h1>Our Projects 🎗 </h1>
-     <h5>Currently, we have 2 successful projects running under Enactus <span style="color: #313130">MSI/MSIT</span><br>1. Project UpVastra 🧥 & 2. Project Pankhudi 🍳</h5>
+      <h1>Our Projects 🎗</h1>
+      <h5>
+        Currently, we have 2 successful projects running under Enactus
+        <span style="color: #313130">MSI/MSIT</span><br />1. Project UpVastra 🧥
+        & 2. Project Pankhudi 🍳
+      </h5>
       <div class="projects">
-        <div class="project"><a href="#"><img src="Images/project_pankhudi.jpg" alt="" /></a></div>
-        <div class="project"><a href="#"><img src="Images/project_pankhudi.jpg" alt="" /></a></div>
+        <div class="project">
+          <a href="#"><img src="Images/project_pankhudi.jpg" alt="" /></a>
+        </div>
+        <div class="project">
+          <a href="#"><img src="Images/project_pankhudi.jpg" alt="" /></a>
+        </div>
       </div>
     </section>
+
+    <section class="container scrollFade">
+      <div class="testimonial mySwiper">
+        <h1
+          style="
+            color: black;
+            font-size: 50px;
+            text-shadow: 1px 2px 5px rgb(226, 151, 11);
+            text-transform: capitalize;
+            text-align: center;
+            padding-bottom: 40px;
+          "
+        >
+          Meet the team
+        </h1>
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="Images/sachi_profile.png" alt="" class="image" />
+            <p>
+              Being an empath, she is not only able to recognize and act on
+              others' emotions but is also driven by the desire to help the
+              people around her. She is a creative-minded individual who always
+              has something innovative brewing in her head, which adds a fresh
+              perspective to projects. She works with clear objectives in mind,
+              which enables us to finish work on time and in an organized
+              manner.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Sachi Rajpal</span>
+              <span class="job">President</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="Images/raghav_profile.png" alt="" class="image" />
+            <p>
+              A marketing and strategy enthusiast, he is extremely passionate
+              about the responsibilities entrusted to him. Despite being focused
+              on objectives, he enjoys the process as well and strives to learn
+              from it as much as possible. He cares deeply about the environment
+              and takes it into account while working on projects. An
+              approachable and easy-to-talk-to person who will put you at ease
+              no matter what the situation is and will always be there to help
+              others.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Raghav Bhatia</span>
+              <span class="job">Vice President</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="Images/anirudh_profile.png" alt="" class="image" />
+            <p>
+              His quiet personality might trick you into thinking otherwise
+              about him, but he is one of the most efficient people we have here
+              at Enactus MSI. His regularity in sticking to deadlines has helped
+              us check off our to-do list in time. Anirudh is always there to
+              help you out and his unique personality makes him an asset for
+              Enactus MSI.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Anirudh Dutta</span>
+              <span class="job">Outreach and PR Head</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="Images/sai_profile.png" alt="" class="image" />
+            <p>
+              His analytical skills make him the perfect fit for this role. His
+              prior experience of working as a head in a startup is a feather in
+              his cap and also benefits the whole society. We look forward to
+              working with this hardworking and sincere team player and wish him
+              luck for all the challenges he faces here.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Sai Siddhant</span>
+              <span class="job">Research and Development Head</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="Images/sreyash_profile.png" alt="" class="image" />
+            <p>
+              His personality can be best described with the words - Versatile
+              but simple. He is a determined person who always gets the work
+              done in the most professional manner. With his commanding
+              personality and attention to detail, we are sure that he will be
+              able to smoothly run the operations department of Enactus MSI.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Sreyash Pratap Singh</span>
+              <span class="job">Operations Head</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="Images/aman_profile.png" alt="" class="image" />
+            <p>
+              An enthusiastic coder who will definitely be a huge asset to our
+              team. His interest in Graphic Designing and Web Development has
+              made him the perfect candidate to be chosen for this position.
+              He's always curious about learning new things and is a
+              deterministic person who is never shy of commitment. We are
+              extremely grateful to have him and wish him luck for all the
+              challenges that he faces here.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Aman Tripathi</span>
+              <span class="job">Technical Head</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="Javascript/script.js"></script>
-    <script src="scrollfade.js"></script>
+    <script src="Javascript/scrollfade.js"></script>
   </body>
 </html>

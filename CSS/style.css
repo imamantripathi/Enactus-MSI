@@ -24,7 +24,6 @@ header > h1::after {
 nav {
   background: #ffc222;
   padding-top: 1em;
-  position: sticky;
   padding-bottom: 1em;
   box-shadow: 0px 2px 3px #ffc222;
 }
@@ -86,7 +85,7 @@ img {
 }
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 @keyframes fade {
   from {
@@ -101,7 +100,7 @@ img {
   pointer-events: all;
 }
 .scrollFade--hidden {
-  opacity: 0;
+  opacity: 0.1;
   pointer-events: none;
 }
 .scrollFade--visible {
@@ -109,5 +108,5 @@ img {
   pointer-events: all;
 }
 .scrollFade--animate {
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
