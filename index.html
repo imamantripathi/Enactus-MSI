@@ -24,7 +24,7 @@
     <link rel="manifest" href="Images/site.webmanifest" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/about_section.css" />
-    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/contact.css" />
     <link rel="stylesheet" href="CSS/projects.css" />
     <link rel="stylesheet" href="CSS/core_team.css" />
     <link
@@ -50,11 +50,11 @@
     </header>
     <nav>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Core Team</a></li>
+        <li><a href="#" onclick="location.reload('index.html')" ;>Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#core-team">Core Team</a></li>
         <li><a href="#aboutus">About Us</a></li>
-        <li><a href="#">Join Us</a></li>
+        <li><a href="#contact-us">Join Us</a></li>
         <li><a href="#">Shop Now!</a></li>
       </ul>
     </nav>
@@ -142,7 +142,7 @@
         </div>
       </div>
     </section>
-    <section class="about scrollFade" style="background: #F0E68C;" id="about">
+    <section class="about scrollFade" style="background: #f0e68c" id="about">
       <div class="content">
         <div class="text">
           <h5
@@ -195,7 +195,7 @@
       </div>
     </section>
 
-    <section class="project-main-container scrollFade">
+    <section class="project-main-container scrollFade" id="projects">
       <h1>Our Projects 🎗</h1>
       <h5>
         Currently, we have 2 successful projects running under Enactus
@@ -212,7 +212,7 @@
       </div>
     </section>
 
-    <section class="container scrollFade">
+    <section class="container scrollFade" id="core-team">
       <div class="testimonial mySwiper">
         <h1
           style="
@@ -344,8 +344,61 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-   
-    
+    <section id="contact-us" class="main-contact-container">
+      <div class="background">
+        <div class="container-contact">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>CONTACT</span>
+                  <span>US</span>
+                </div>
+                <div class="app-contact">
+                  CONTACT INFO : info.enactusmsi@gmail.com
+                </div>
+              </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input
+                      class="app-form-control"
+                      placeholder="NAME"
+                      value="Aman Tripathi"
+                    />
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL" />
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO" />
+                  </div>
+                  <div class="app-form-group message">
+                    <input class="app-form-control" placeholder="MESSAGE" />
+                  </div>
+                  <div class="app-form-group buttons">
+                    <button class="app-form-button">CANCEL</button>
+                    <button class="app-form-button">SEND</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="Javascript/script.js"></script>
     <script src="Javascript/scrollfade.js"></script>
