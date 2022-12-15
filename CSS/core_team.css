@@ -3,90 +3,100 @@
   font-family: "Open Sans", sans-serif;
 }
 .container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F0E68C;
-  }
-  .testimonial {
-    position: relative;
-    max-width: 900px;
-    width: 100%;
-    padding: 50px 0;
-    overflow: hidden;
-  }
-  .testimonial .image {
-    height: 170px;
-    width: 170px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  .testimonial .slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 30px;
-    height: 100%;
-    width: 100%;
-  }
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0e68c;
+}
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+.slide .quote-icon {
+  font-size: 30px;
+  color: #000000;
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.details .job {
+  font-size: 12px;
+  font-weight: 400 !important;
+  color: #333;
+}
+/* swiper button css */
+.nav-btn {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px !important;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: #000000 !important;
+}
+.container > .testimonial > h1 {
+  color: black;
+  font-size: 50px;
+  text-shadow: 1px 2px 5px rgb(226, 151, 11);
+  text-transform: capitalize;
+  text-align: center;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
   .slide p {
-    text-align: center;
-    padding: 0 160px;
-    font-size: 15px;
-    font-weight: 400;
-    color: #333;
+    padding: 0 20px;
   }
-  .slide .quote-icon {
-    font-size: 30px;
-    color: #000000;
-  }
-  .slide .details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .details .name {
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-  }
-  .details .job {
-    font-size: 12px;
-    font-weight: 400 !important;
-    color: #333;
-  }
-  /* swiper button css */
   .nav-btn {
-    height: 40px !important;
-    width: 40px !important;
-    border-radius: 50%;
-    transform: translateY(30px) ;
-    background-color: rgba(0, 0, 0, 0.1);
-    transition: 0.2s;
+    display: none;
   }
-  .nav-btn:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+  .container > .testimonial > h1 {
+    font-size: 60px;
   }
-  .nav-btn::after,
-  .nav-btn::before {
-    font-size: 20px !important;
-    color: #fff;
-  }
-  .swiper-pagination-bullet {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  .swiper-pagination-bullet-active {
-    background-color: #000000 !important;
-  }
-  @media screen and (max-width: 768px) {
-    .slide p {
-      padding: 0 20px;
-    }
-    .nav-btn {
-      display: none;
-    }
-  }
-   
+}

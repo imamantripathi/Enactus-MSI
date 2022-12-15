@@ -182,7 +182,9 @@
   .screen-body {
     flex-direction: column;
   }
-
+.background{
+  min-height: 35vh;
+}
   .screen-body-item.left {
     margin-bottom: 30px;
   }

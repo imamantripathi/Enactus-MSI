@@ -39,7 +39,12 @@ header > h1::before,
 header > h1::after {
   content: url("https://github.com/imamantripathi/Enactus-MSI/blob/master/Images/favicon-32x32-removebg-preview.png?raw=true");
 }
-
+@media screen and (max-width: 520px) {
+  header > h1 {
+    font-size: 30px;
+    
+  }
+}
 /* CSS implementation in Navbar  */
 nav {
   background: #ffc222;

@@ -97,4 +97,7 @@ section > div > div > a > button:hover {
     margin-bottom: 18px;
     text-align: center;
   }
+  .text h5{
+    padding: 0px 10px;
+  }
 }

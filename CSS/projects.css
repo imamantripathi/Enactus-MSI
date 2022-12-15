@@ -57,4 +57,12 @@
   .project {
     padding: 1rem 0rem;
   }
+  .project-main-container h1{
+    font-size: 32px;
+    
+  }
+  .project-main-container h5{
+    font-size: 24px;
+    
+  }
 }
